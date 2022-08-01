@@ -83,13 +83,13 @@ em{
 
 .about{
     
-    margin:  70px;
+    margin:  70px 100px;
     line-height: 30px;
     background-color: #6952af;
     color: white;
     border: white;
     border-radius: 20px;
-    padding: 70px;
+    padding: 80px;
 }
 
 .about img{
@@ -116,7 +116,7 @@ em{
     margin: 50px 100px;
     background-color: #6952af;
     border-radius: 20px;
-    padding: 70px;
+    padding: 150px;
     color: white;
     line-height: 30px;
 }
@@ -133,7 +133,7 @@ em{
     margin: 50px 100px;
     background-color: #6952af;
     border-radius: 20px;
-    padding: 70px;
+    padding: 85px;
     color: white;
     line-height: 30px;
 
@@ -150,4 +150,23 @@ em{
 
 .interests h1{
     text-align: center;
+}
+
+.book-images{
+    padding: 20px 0px;
+    text-align: center;
+    display: flex;
+}
+
+.book-images img{
+    height: 200px;
+    width: auto;
+}
+.video-container{
+    text-align: center;
+    display: flex;
+}
+.column {
+    flex: 30.33%;
+    padding: 20px;
 }
