@@ -1,0 +1,347 @@
+body{
+    background-image: url(image/bg/sasuke.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+#header{
+    height: 165px;
+    background-color: gainsboro;
+    background-image: url(images/jpg/header.jpg);
+
+}
+#main-header{
+    width: 1000px;
+    height: 165px;
+    background-color: plum;
+    margin: auto;
+    background-image: url(images/gif/main_header.gif);
+}
+
+#navigation{
+    height: 35px;
+    background-color: gainsboro;
+    background-image: url(images/png/nav.png);
+
+}
+#main-navigation{
+    width: 1000px;
+    height: 35px;
+    background-color: pink;
+    margin: auto;
+    background-image: url(images/png/nav.png);
+}
+
+#main-navigation a{
+    color: #00ff00;
+    text-decoration: none;
+    line-height: 35px;
+    padding: 0 57px;
+    border-left: 1px inset #aaa;
+    border-right: 1px inset #aaa;
+    float: left;
+}
+
+#main-navigation a:hover{
+    color: white;
+    background-image: url(images/jpg/hover.jpg);
+}
+
+#headline{
+    height: 25px;
+    background-color: #cccccc;
+
+}
+#main-headline{
+    width: 1000px;
+    height: 25px;
+    background-color: #cccccc;
+    margin: auto;
+}
+#content{
+   padding: 30px;
+   width: 940px; 
+   margin: auto;
+   background-color: #00000090;
+   color: hotpink;
+}
+#slider{
+    height: 350px;
+    border: 1px solid #555555;
+    margin: 15px 0;
+}
+#text-content-1{
+    height: 150px;
+    border: 1px solid #555555;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+#text-content-1 h1{
+    text-align: center;
+    color: deeppink;
+    margin: 15px;
+}
+#text-content-1 p{
+    text-align: center;
+    color: deeppink;
+    margin: 15px;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+#text-content-2{
+    height: 250px;
+    border: 1px solid #555555;
+    margin: 15px;
+    border-radius: 15px;
+}
+#text-content-2 h2{
+    text-align: center;
+    color: deeppink;
+    margin: 15px;
+    letter-spacing: 2px;
+}
+#text-content-2 p{
+    text-align: center;
+    color: deeppink;
+    margin: 15px;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+#picture-content-1{
+    height: 220px ;
+    margin: 15px 0;
+}
+.content-1-picture{
+    margin: 0 15px;
+    height: 220px;
+    width: 440px;
+    background-color: #444444;
+    border-radius: 15px;
+    float: left;
+}
+#picture-content-2{
+    height: 200px ;
+    margin: 15px 0;
+}
+.content-2-picture{
+    margin: 0 15px;
+    height: 220px;
+    width: 283px;
+    background-color: #444444;
+    border-radius: 15px;
+    float: left;
+}
+#footer{
+    height: 350px;
+    background-color: black;
+    background-image: url(images/jpg/footer.jpg);
+}
+#footer-top{
+    height: 300px;
+    width: 1000px;
+    margin: auto;
+}
+#footer-bottom{
+    height: 50px;
+    width: 1000px;
+    margin: auto;
+    background-color: darkblue;
+    background-image: url(images/jpg/footer_bottom.jpg);
+}
+
+#footer-bottom p{
+    margin: 0px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}
+
+#footer-bottom a{
+    color: #ff0;
+    text-decoration: none;
+}
+
+#footer-bottom a:hover{
+    color: #ffc;
+    text-decoration: underline;
+}
+
+.footer-info{
+    width: 220px;
+    height: 300px;
+    margin: 0 15px;
+    float: left;
+}
+
+.footer-info h2{
+    color: #ff0;
+    margin: 0px;
+    border-bottom: 2px solid;
+}
+
+.footer-info p{
+    color: white;
+    margin: 10px 0;
+}
+
+.footer-info a{
+    color: #ff0;
+    text-decoration: none;
+}
+
+.footer-info a:hover{
+    color: #ffc;
+    text-decoration: underline;
+}
+
+.footer-info li{
+    color: white;
+    line-height: 45px;
+    list-style-image: url(images/png/clock.png);
+}
+
+.social{
+    height: 56px;
+    margin: 15px 0px;
+}
+
+.social-icon{
+    width: 56px;
+    height: 56px;
+    float: left;
+    margin-right: 10px;
+}
+
+.about{
+    border: 2px white solid;
+    height: 230px;
+    margin: 15px 0;
+    border-radius: 15px;
+}
+
+.about-pix{
+
+    /* background-color: white; */
+    width: 200px;
+    height: 200px;
+    float: left;
+    /* border-radius: 100px; should be half of picture height to form a circle */
+    
+}
+
+.about-pix img{
+    border-radius: 100px;
+}
+
+.about h2{
+    color: #ff0;
+    margin: 15px;
+}
+
+.about p{
+    margin: 15px;
+    line-height: 20px;
+}
+
+.about a{
+    color: #ff0;
+    text-decoration: none;
+}
+
+.about a:hover{
+    color: #ffc;
+    text-decoration: underline;
+}
+
+.gallery img{
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.gallery img:hover{
+    transform: scale(1.1);
+    filter: grayscale(100%);
+}
+
+#register fieldset{
+    border-radius: 10px;
+    border: white solid 2px;
+}
+
+#register legend{
+    font-weight: bold;
+    font-size: 18px;
+    color: wheat;
+}
+
+#register td{
+    color: white;
+    line-height: 30px;
+}
+
+#register input[type=text], input[type=password]{
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#register input[type=text]:focus, input[type=password]:focus{
+    width: 120%;
+    background-color: #ff0;
+}
+
+#register input[type=submit]{
+    background-color: #030;
+    border: none;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#register input[type=submit]:hover{
+    background-color: #060;
+    color: #ff0;
+}
+
+#register textarea{
+    resize: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+#register input[type=file]{
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#register select{
+    padding: 10px 20px;
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+}
+
+#contact table{
+    background-color: #f1f1f1;
+    border-collapse: collapse;
+}
+
+#contact th{
+    background-color: #f1f1f1;
+    padding: 5px;
+    text-align: left;
+}
+
+#contact td{
+    padding: 5px;
+}
+
+tr:nth-child(even){
+    background-color: #ff0;
+    color: red;
+}

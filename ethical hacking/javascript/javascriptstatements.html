@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Statements in Javascript</title>
+</head>
+<body>
+    <h1>Working with Statements in Javascript</h1>
+
+    <h3>If Else Statements: checks if a condition is true and proceeds to execute the code within the if block but if false does not execute</h3>
+
+    <button onclick="ifStatement()">Click to run the if statement</button>
+
+    <script>
+        function ifStatement(){
+            var userInput = prompt("Please input something");
+
+            if(userInput == "hello"){
+                alert("Hello!");
+            }
+            
+        }
+        
+    </script>
+
+    <h3>If Else Statements: checks if a condition is true and proceeds to execute the code within the if block but if its false executes the code block within the else block</h3>
+    <button onclick="ifElseStatement()">Click to run the if else statement</button>
+
+    <script>
+        function ifElseStatement(){
+            var userInput = prompt("Please input something");
+
+            if(userInput == "hello"){
+                alert("You're so polite!");
+            }
+            else{
+                alert("You have no manners. Greet me first!");
+            }
+        }
+    </script>
+
+    <h3>If Else if Statements: checks if a condition is true and proceeds to execute the code within the if block but if its false executes the code block within the else block</h3>
+    
+    <button onclick="ifElseIfStatement()">Click to run the if else if statement</button>
+    <h4 id="studentScore"></h4>
+
+    <script>
+        function ifElseIfStatement(){
+            var score = prompt("Please input your score");
+            var studentScore = document.getElementById("studentScore");
+
+            if(score < 0 || score > 100)
+            {
+                alert("Please input a number between 0 and 100");
+                score = prompt("Please input your score");
+            }
+
+            if (score >=80 && score <= 100) {
+                studentScore.innerHTML = "Excellent Grade!"
+            } 
+            else if (score >=70 && score <= 79) {
+                studentScore.innerHTML = "Merit Grade!"
+            }
+            else if (score >=40 && score <= 69) {
+                studentScore.innerHTML = "Credit Grade!"
+            }
+            else {
+                studentScore.innerHTML = "You failed the course."
+                
+            }
+        }
+    </script>
+
+    <h3>Nested if Statements: an if statement that containes one or more if statements.</h3>
+    
+    <button onclick="nestedIfStatement()">Click to run the nested if statement</button>
+    <h4 id="login"></h4>
+
+    <script>
+        function nestedIfStatement(){
+            var username = prompt("Please enter your username");
+            var pin = parseInt(prompt("Please enter your PIN"));
+
+            if (username != "" && pin != "") {
+                if (username == "admin" && pin ==1234) {
+                    alert("You have logged in!");
+                    document.getElementById('login').textContent = "Logged in successfully!"
+                }
+                else{
+                    document.getElementById('login').textContent = "Login failed, try again!"
+                }
+                
+            }
+            else{
+                login.innerHTML = "Please input required fields"
+            }
+        }
+    </script>
+
+    <h3>Switch Case Statements: used to simplify code to avoid multiple if statements.</h3>
+    
+    <button onclick="switchStatement()">Click to run the switch statement</button>
+    <h4 id="switches"></h4>
+    <script type="text/javascript" src="switchcase.js"></script>
+    
+</body>
+</html>

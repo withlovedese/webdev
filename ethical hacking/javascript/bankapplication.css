@@ -1,0 +1,33 @@
+body{
+    background-color: lightblue;
+    text-align: center;
+    font-family: 'Playfair Display';
+}
+
+button{
+    font-size: 20px;
+    border: 1px solid royalblue;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: royalblue;
+    padding: 10px 20px;
+    color: white;
+}
+
+h1{
+    font-family: Corinthia;
+    font-size: 100px;
+}
+
+ol{
+    background-color: #3A5BA0;
+    border-radius: 20px;
+    padding: 10px 20px;
+    line-height: 30px;
+    color: white;
+    margin: 30px 500px;
+}
+
+h3{
+    
+}

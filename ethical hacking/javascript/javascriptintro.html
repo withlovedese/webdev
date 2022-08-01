@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Ethical Hacking</title>
+    
+</head>
+<body>
+    
+
+    <h1>Welcome to Ethical Hacking Class. LOG IN!</h1>
+
+    <h3 id="changeText">Our Javascript element</h3>
+    <script src="javascriptintro.js"></script>
+
+
+    <!-- <form id="login">
+        <label for="username"><b>Username:</b></label>
+        <input type="text" placeholder="Enter username" name="uname" required> <br> <br>
+
+        <label for="password"><b>Password:</b></label>
+        <input type="password" placeholder="Enter password" name="psw" required> <br> <br>
+
+        <input type="submit" value="login">
+    </form>
+
+    <script>
+        var form = document.getElementById("login");
+
+        form.addEventListener("sumbit", function (event) {
+        
+            event.preventDefault();
+
+            var username = form.elements["uname"];
+            var password = form.elements["psw"];
+
+            let UserName = username.value;
+            let PassWord = password.value;
+
+            var validuname = false;
+            var validpsw = false;
+
+            if (UserName == "" || PassWord == ""){
+                alert("Please fill in the required fields!")
+            }
+
+            else {
+                if (UserName == "Adesemi" && PassWord == "Adesemi"){
+                    validpsw = true;
+                    validuname = true;
+                }
+
+                if (validuname && validpsw){
+                    alert("You have succesfully logged in!");
+                }
+
+                else{
+                    alert("Your username and/or password is incorrect!");
+                }
+            }
+
+
+            
+
+        });
+    </script> -->
+    
+
+    <button onclick="loginFunction()">
+        Click to log in!
+    </button>
+
+    <script> 
+        function loginFunction(){
+            var username = prompt("Please enter your username");
+            var password = prompt("Please enter your password");
+
+            if (username == "" || password == ""){
+                alert("Please fill in required fields!");
+                username = prompt("Please enter correct username");
+                password = prompt("Please enter your password");
+            }
+
+            else{
+
+                if (username == "Adesemi" && password == "Adesemi"){
+                    alert("You have logged in!");
+                }
+
+                else{
+                    alert("Login failed!");
+                    username = prompt("Please enter correct username");
+                    password = prompt("Please enter your password");
+                }
+
+            }
+
+            
+            
+        }
+    </script>
+    <!-- <script>
+        var firstNumber =20;
+        var secondNumber = 22;
+        alert(firstNumber + secondNumber);
+    </script> -->
+    
+</body>
+</html>
