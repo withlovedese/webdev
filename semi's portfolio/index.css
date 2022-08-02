@@ -116,7 +116,7 @@ em{
     margin: 50px 100px;
     background-color: #6952af;
     border-radius: 20px;
-    padding: 150px;
+    padding: 100px;
     color: white;
     line-height: 30px;
 }
@@ -126,6 +126,15 @@ em{
 }
 
 .projects h3{
+    text-align: center;
+}
+
+.projects a{
+    text-emphasis: none;
+    color: #d8b9ff;
+}
+
+.demo-container{
     text-align: center;
 }
 
@@ -152,6 +161,11 @@ em{
     text-align: center;
 }
 
+.interests a{
+    text-emphasis: none;
+    color: #d8b9ff;
+}
+
 .book-images{
     padding: 20px 0px;
     text-align: center;
@@ -161,6 +175,11 @@ em{
 .book-images img{
     height: 200px;
     width: auto;
+}
+
+.book-images img:hover{
+    transform: scale(1.1);
+    filter: grayscale(100%);
 }
 .video-container{
     text-align: center;
