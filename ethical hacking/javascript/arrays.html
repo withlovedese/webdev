@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with JavaScript Arrays</title>
+</head>
+<body>
+
+    <main>
+
+        <h1>Working with JavaScript Arrays</h1>
+
+        <p>An array is a collection of values stored in adjacent memory locations
+        Arrays are referenced using a common name and the values must be the same data type
+        The values can be refered to as elements and can be accessed using an index number
+        </p>
+
+        <h3>Single Dimensional arrays:</h3>
+        <button onclick="oneDArrays()">Click to see some one Dimensional arrays</button>
+        <script>
+
+            function oneDArrays() {
+                 //declaration using the array object and then initialization
+                var studentName = new Array(3);
+                studentName[0] = "Frank";
+                studentName[1] = "Semi";
+                studentName[2] = "David";
+                alert("Student names are " + studentName);
+
+                //declaration and initialization at the same time
+                var studentAddress = new Array("Ikoyi", "Ajah", "Ikorodu");
+                alert("Student addresses are " + studentAddress[0] + ", " + studentAddress[1] + ", " + studentAddress[2] + ", " + studentAddress[3]); //indexing past what's defined just prints "undefined"
+
+                //declaration and initialization without using Array
+                var studentState = ["Ogun", "Ondo", "Imo"];
+                alert("Student states are " + studentState);
+
+            }
+        </script>
+
+        <h3>Exercise</h3>
+        <p>Create an application that takes in five numbers as input and outputs the multiplication of those five numbers. Use a for loop and and an array</p>
+        <button onclick="exerciseOne()">Click to run multiplication app</button>
+        <script>
+            function exerciseOne(){
+                var numbers = new Array(5);
+                var result = 1;
+
+                for (let i = 0; i < numbers.length; i++){
+                    //numbers[i] = parseInt(prompt("Enter the next number"));
+                    numbers[i] = prompt("Enter the next number");
+                    result *= numbers[i];
+                }
+
+                alert("Your result is " + result);
+            }
+        </script>
+
+        <p>Create an application that takes in three student names as input and outputs the students in a bulleted list. Use a for loop and and an array</p>
+        <button onclick="exerciseTwo()">Click to run student list app</button>
+        <ul id="students"></ul>
+        <script>
+            function exerciseTwo(){
+                var students = new Array(3);
+                var studentlist = "";
+
+
+                for (let i = 0; i < students.length; i++){
+                    students[i] = prompt("Enter student name");
+                    studentlist += "<li>" + students[i] + "</li>"
+                }
+
+                document.getElementById("students").innerHTML = studentlist;
+
+                alert("Your students are" + students);
+            }
+        </script>
+
+        <h3>Multi Dimensional arrays:</h3>
+        <h3>Exercise</h3>
+        <p>Create an application that takes in a number from 1 thorugh 3 and returns the corresponding employee's information</p>
+        
+        <div id="employeeinfo">
+            <br>
+            <label>Number:</label>
+            <input type="text" placeholder="Enter a number 1 through 3" id="number">
+            <button onclick="exerciseThree()">sumbit</button>
+        </div>
+        <p id="info"></p>
+        <script>
+            var employees = new Array(3);
+            employees[0] = new Array("John", "26", "North Carolina");
+            employees[1] = new Array("Frank", "16", "New York");
+            employees[2] = new Array("Bolu", "21", "California");
+
+            function exerciseThree(){
+                // var num = parseInt(document.getElementById("number").value);
+                // document.getElementById("info").innerHTML = employees[num - 1];
+
+                var num = document.getElementById("number").value;
+
+                switch (num) {
+                    case "1":
+                        document.getElementById("info").innerHTML = employees[0];
+                        break;
+                    case "2":
+                        document.getElementById("info").innerHTML = employees[1];
+                        break;
+                    case "3":
+                        document.getElementById("info").innerHTML = employees[2];
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+
+
+        </script>
+
+
+
+
+
+
+    </main>
+
+    
+</body>
+</html>
