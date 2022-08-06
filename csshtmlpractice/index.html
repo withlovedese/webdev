@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+        }
+
+        button{
+            font-family: 'Lato', sans-serif;
+        }
+
+        h1{
+            margin: 0;
+        }
+
+        p{
+            margin: 0;
+        }
+        .bg-gray-900{
+            background-color: #121826 ;
+        }
+
+        .text-white{
+            color: white;
+        }
+
+        .justify-between {
+            justify-content: space-between;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .items-center{
+            align-items: center;
+        }
+
+        .m-8{
+            margin: 8px;
+        }
+
+        .p-8{
+            padding: 8px;
+        }
+
+        .py-18{
+            padding-top: 18px;
+            padding-bottom: 18px;
+        }
+
+        .px-18{
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        .no-underline{
+            text-decoration: none;
+        }
+
+        .bg-brand-teal{
+            background-color: #539D98;
+        }
+
+        .border-none{
+            border: none;
+        }
+
+        .rounded-full{
+            border-radius: 9999px;
+        }
+
+        .uppercase{
+            text-transform: uppercase;
+        }
+
+        .text-sm{
+            font-size: 14px;
+        }
+
+        .z-10{
+            z-index: 10;
+        }
+
+        .h-full{
+            height: 100%;
+        }
+
+        .object-cover{
+            object-fit: cover;
+            /* ensures that video/bg fits always fits screen no matter resize */
+        }
+
+        .text-brand-teal{
+            color: #90CAC7;
+        }
+
+        .absolute{
+            position: absolute;
+        }
+
+        .mx-auto{
+            margin-left: auto;
+        }
+
+        .my-auto{
+            margin-right: auto;
+        }
+
+        .text-36{
+            font-size: 36px;
+        }
+
+        .text-16{
+            font-size: 16px;
+        }
+
+        .h-482{
+            height: 482px;
+        }
+
+        /* sm screen size*/
+        @media (min-width: 640px) {
+
+            .sm\:text-60{
+                font-size: 60px;
+            }
+
+            .sm\:text-20{
+                font-size: 20px;
+            }
+
+            .sm\:h-689{
+                height: 689px;
+            }
+            
+        }
+
+        /* md screen size*/
+        @media (min-width: 768px) {
+
+            .md\:text-60{
+                font-size: 60px;
+            }
+
+            .md\:text-20{
+                font-size: 20px;
+            }
+
+            .md\:h-689{
+                height: 689px;
+            }
+            
+        }
+
+        
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-900">
+
+    <div class="relative">
+        <div class="inset-0 absolute z-10 bg-gradient-to-b from-black to-transparent hidden md:block" style="bottom: -50px;"></div>
+        <header class="flex justify-between px-6 py-6 relative z-20 mx-auto my-auto bg-blue" style="max-width: 1200px;">
+            
+            <div class="flex justify-center items-center">
+                <img src="./logo.svg" alt="" style="margin-right: 50px;">
+                <nav class="hidden md:block">
+                    <a href="" class="text-white no-underline" style="padding: 8px 20px;">Pricing</a>
+                    <a href="" class="text-white no-underline" style="padding: 8px 20px;">Courses</a>
+                    <a href="" class="text-white no-underline" style="padding: 8px 20px;">Blog</a>
+                    <a href="" class="text-white no-underline" style="padding: 8px 20px;">Forum</a>
+    
+                </nav>
+                
+            </div>
+            <div class="items-center hidden md:flex">
+                <a href="" class="text-white block no-underline" style="padding: 8px 20px; margin-right: 10px;">Login</a>
+                <button style="padding: 8px 20px;" class="bg-brand-teal text-white border-none rounded-full py-18 px-18 uppercase font-bold text-sm">Sign Up</button>
+            </div>
+    
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:hidden text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </header>
+
+    </div>
+
+    <section class="relative overflow-hidden h-482 sm:h-689" style="top: -90px;">
+        <div class="absolute h-482 sm:h-689">
+            <div class="bg-black inset-0 absolute z-10 opacity-50 md:hidden"></div>
+            <video loop="loop"
+            autoplay="autoplay"
+            playsinline="" 
+            muted="muted" 
+            class="w-full h-full object-cover" 
+            src="./video/galaxy.mp4"></video>
+            <!-- <img src="./img/hero.jpg" class="w-full"> -->
+
+        </div>
+        
+
+        <div style="max-width: 1200px;" class="my-auto mx-auto px-6 pt-32 sm:pt-48">
+            <div class="text-white relative z-10" style="max-width: 538px;">
+                <h1 class="text-white text-36 sm:text-60 font-bold leading-none">Turbocharge your <span class="text-brand-teal">development career</span></h1>
+                <p style="max-width: 449px; margin-top: 30px;" class="sm:text-20 text-16">Chris Courses provides students and professionals a college-level web development education.</p>
+                <button class="bg-brand-teal text-white border-none rounded-full w-full md:w-auto" style="margin-top: 28px; padding: 12px 28px;">Get Started</button>
+            </div>
+        </div>
+        <div></div>
+    </section>
+
+    <!-- stats section -->
+    <section class="bg-gray-900 px-6">
+        <div style="top: -100px;" class="relative z-20">
+            <div class="bg-gray-800 md:mx-auto rounded-lg md:flex md:divide-x md:divide-gray-600" style="max-width: 878px;">
+                <div class="text-center py-8 border-b border-solid border-gray-700 md:w-1/3 md:border-b-0">
+                    <h2 class="text-purple-400 font-bold text-5xl">279</h2>
+                    <p class="text-gray-300">Lessons</p>
+                </div>
+    
+                <div class="text-center py-8 border-b border-solid border-gray-700 md:w-1/3 md:border-b-0">
+                    <h2 class="text-purple-400 font-bold text-5xl">71</h2>
+                    <p class="text-gray-300">Hours of content</p>
+                </div>
+    
+                <div class="text-center py-8 md:w-1/3">
+                    <h2 class="text-purple-400 font-bold text-5xl">8708</h2>
+                    <p class="text-gray-300">Students</p>
+                </div>
+            </div>
+            <p class="text-gray-500 text-xs text-center mt-4">Metrics update real-time</p>
+        </div>
+
+    </section>
+    
+</body>
+</html>
+
+<!-- 
+    display options:
+    block: takes up entire width of parent container
+    inline: only takes up exact amount of space it consists of. (doesn't allow you to use margin top/bottom)
+    inline-block: only takes up exact amount of space it consists of but allows us to use margin to space out our elements
+    none: makes it hidden
+
+    all html elements have a default display
+
+    flex:
+ -->
