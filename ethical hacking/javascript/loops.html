@@ -90,59 +90,42 @@
     <h3>Exercise</h3>
     <button onclick="twoDArray()">Click to run the do while loop</button>
     <div>
-        <table>
-            <legend id="twoD">Students appears here</legend>
-            <tr>
-                <th>Name</th>
-                <th>Age</th>
-                <th>Location</th>
-            </tr>
-            <tr id="row1">
-                <td id="name1"></td>
-                <td id="age1"></td>
-                <td id="loc1"></td>
-            </tr>
-            <tr id="row2">
-                <td id="name2"></td>
-                <td id="age2"></td>
-                <td id="loc2"></td>
-            </tr>
-            <tr id="row3">
-                <td id="name3"></td>
-                <td id="age3"></td>
-                <td id="loc3"></td>
-            </tr>
+        <table id="table">
+            <legend id="twoD"></legend>
         </table>
-    
     </div>
+
+
     <script>
         function twoDArray() {
-            var studentinfo = new Array(3);
+            var studentinfo = new Array(4);
             // console.log(studentinfo);
             studentinfo[0] = new Array("Semi", "17", "Lagos");
-            studentinfo[1] = new Array("Semi", "19", "New York")
-            studentinfo[2] = new Array("Semi", "20", "North Carolina")
+            studentinfo[1] = new Array("Semi", "19", "New York");
+            studentinfo[2] = new Array("Semi", "20", "North Carolina");
+            studentinfo[3] = new Array("Semi", "23", "South Carolina");
 
-            //console.log(studentinfo[0][2])
-            // console.log(studentinfo);
-
+            
             twoD.innerHTML = "<h3>Student information</h3>";
+            document.getElementById("table").innerHTML += "<tr><th>Name</th><th>Age</th><th>Location</th></tr>";
 
             for (let i = 0; i < studentinfo.length; i++){
-                var cur = "row" + (i+1);
-                var name = "name" + (i+1);
-                var age = "age" + (i+1);
-                var loc = "loc" + (i+1);
+                // var cur = "row" + (i+1);
+                // var name = "name" + (i+1);
+                // var age = "age" + (i+1);
+                // var loc = "loc" + (i+1);
 
-                console.log(name);
-                console.log(studentinfo[i]);
-                document.getElementById(name).innerHTML = studentinfo[i][0];
-                document.getElementById(age).innerHTML = studentinfo[i][1];
-                document.getElementById(loc).innerHTML = studentinfo[i][2];
+                // console.log(name);
+                // console.log(studentinfo[i]);
+                // document.getElementById(name).innerHTML = studentinfo[i][0];
+                // document.getElementById(age).innerHTML = studentinfo[i][1];
+                // document.getElementById(loc).innerHTML = studentinfo[i][2];
                 
                 // name.innerHTML = studentinfo[i][0];
                 // age.innerHTML = studentinfo[i][1];
                 // loc.innerHTML = studentinfo[i][2];
+
+                document.getElementById("table").innerHTML += "<tr><td>" + studentinfo[i][0] + "</td><td>"+ studentinfo[i][1] +"</td><td>"+ studentinfo[i][2] +"</td><tr>";
                 
             }
 
