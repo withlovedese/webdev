@@ -36,7 +36,7 @@ const outputHTML = matches => {
         const html = matches.map(match => `
             <div class="card card-body mb-4">
                 <h2>${match.officialName}</h2>
-                <h3 class="text-primary">Capital: ${match.Capital}</h3>
+                <h3 style="color: #186303;">Capital: ${match.Capital}</h3>
                 <p>Slogan: ${match.Slogan}</p>
                 <p>Website: <a href="https://${match.Website}" target="_blank">${match.Website}</a><p>
                 <small>Lat: ${match.Latitude} / Long: ${match.Longitude}</small>
