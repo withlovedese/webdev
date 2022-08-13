@@ -4,10 +4,10 @@ const matchList = document.getElementById('matchList');
 //search the states.json and filter
 
 const searchStates = async searchText => {
-    const res1 = await fetch('./data/states.json');
+    //const res1 = await fetch('./data/states.json');
     const res = await fetch('https://nigerian-states-info.herokuapp.com/api/v1/states');
     const states = await res.json();
-    const states1 = await res1.json();
+    //const states1 = await res1.json();
 
     //console.log(states.data[0].info);
     //console.log(states1[0]);
