@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Javascript objects</title>
+</head>
+<body>
+    <h1>Working with Javascript Objects</h1>
+    <h2>The Trust Company</h2>
+    <h3>Employee Details</h3>
+    <p id="employee"></p>
+    <p id="eligible"></p>
+
+    <script>
+        var employee = {
+            firstName: "Olufolahan",
+            lastName: "Boluwatife",
+            department:"IT",
+            salary: 100000
+        }
+
+        var employee2 = new Object();
+        employee2.firstName = "Adesemi";
+        employee2.lastName = "Elumaro";
+        employee2.department = "Software Engineering";
+        employee2.salary = 1000000000;
+        employee2.fullName = function(){
+            return this.firstName + " " + this.lastName;
+        }
+
+        document.getElementById('employee').innerHTML = employee2.fullName() + " is in the " + employee2.department + " Department and her salary is $"+ employee2.salary;
+
+        // var nameAndEligible = {
+        //     name : "",
+        //     age : 0,
+        //     eligibility : function(){
+        //         if (this.age >= 18) {
+        //             return "eligible";
+        //         }
+        //         else{
+        //             return "not eligible";
+        //         }
+        //     }
+        // }
+
+        // nameAndEligible.name = prompt("enter full name");
+        // nameAndEligible.age = prompt("enter your age");
+        // document.getElementById("eligible").innerHTML = nameAndEligible.name + " is "+nameAndEligible.eligibility() + " for our services";
+        // console.log(nameAndEligible.name + " is "+nameAndEligible.eligibility() + " for our services");
+    </script>
+
+    <h2>Date objects</h2>
+    <button onclick="dateFunction()">Click for today's date</button>
+
+    <script>
+        function dateFunction() {
+            var today = new Date();
+            var day = today.getDate();
+            var month = today.getMonth() +1;
+            var year = today.getFullYear();
+            var time = today.toLocaleTimeString();
+            var date = today.toLocaleDateString();
+
+            console.log(day + "/" + month + "/" + year);
+            console.log(time);
+            console.log(date);
+        }
+    </script>
+    
+</body>
+</html>
