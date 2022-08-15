@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Local storage</title>
+</head>
+<body>
+    <h1>Working with Local storage in Javascript</h1>
+    <form action="success.html">
+        Username: <input type="text" id="input" onblur="store()">
+        <input type="submit" value="Sumbit">
+        <input type="reset" value="Reset" onclick="cancelStore()">
+    </form>
+    <script>
+        function store(){
+            if (('localStorage' in window) && window['localStorage'] !== null){
+                let input = document.getElementById('input').value;
+                localStorage.setItem('username', input);
+                
+            } else {
+                alert('your browser does not support local storage');
+            }
+        }
+
+        function cancelStore(){
+            if (('localStorage' in window) && window['localStorage'] !== null){
+                localStorage.removeItem('username');
+                
+            } else {
+                alert('your browser does not support local storage');
+            }
+        }
+    </script>
+    
+</body>
+</html>

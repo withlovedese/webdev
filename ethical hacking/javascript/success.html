@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Local storage</title>
+</head>
+<body onload="print()">
+    <h1>Welcome to the success page!</h1>
+    <h3>Welcome <span id="nameOfUser"></span> to my website.</h3>
+    <script>
+        function print(){
+            let username = localStorage.getItem('username');
+            document.getElementById('nameOfUser').innerHTML = username;
+        }
+    </script>
+
+    
+</body>
+</html>
