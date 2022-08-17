@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Working with Geolocation in JavaScript</h1>
+    <h3>Testing for support of Geolocationin browser</h3>
+    <button onclick="displayLocation()">check geolocation availability</button>
+    <button onclick="getLocation()">Check current location</button>
+    <script>
+        function displayLocation(){
+            var str = 'geolocation is not supported in this browser';
+
+            if(window.navigator.geolocation){
+                str = 'Geolocation is supported in this browser';
+            }
+
+            alert(str);
+        }
+
+        function showPosition(position){
+            alert('Latitude: ' + position.coords.latitude + "\n" + "Longitdue: " + position.coords.longitude);
+        }
+
+        function getLocation(){
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                alert('Geolocation not supported');
+            }
+        }
+    </script>
+    
+</body>
+</html>
