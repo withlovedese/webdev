@@ -11,6 +11,12 @@
       "day": "wednesday",
       "reminder": false,
       "id": 6
+    },
+    {
+      "text": "Call Aima",
+      "day": "July 9th at 10:30pm",
+      "reminder": true,
+      "id": 7
     }
   ]
 }
